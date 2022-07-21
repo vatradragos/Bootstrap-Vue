@@ -1,0 +1,343 @@
+<!-- Created by Dragoş Vatră  0743503240  vatradragos@yaoo.com -->
+<!-- Start web page -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start <head> elements -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Magna Graecia - Sightseeing 6 - Created and built by Dragoș Vatră</title>
+    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@2.6.9/dist/vue.js"></script>
+	  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>	
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Stop <head> elements -->
+<!-- Start <body> elements -->
+<body>
+    <div id="app">
+    <!-- Start <navbar> elements -->
+        <div id="navbar">
+          <b-navbar toggleable="lg" type="dark" variant="dark">
+            <b-navbar-brand href="index.html">
+              <img src="images/logo-mg.jpg" class="d-inline-block align-top logo" alt="Logo">
+            Visit Magna Graecia</b-navbar-brand>
+            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-collapse id="nav-collapse" is-nav>
+              <b-navbar-nav>
+                <b-nav-item href="../index.html" target="_blank">Portfolio</b-nav-item>
+                <b-nav-item href="index.html">Home</b-nav-item>
+                <b-nav-item href="index.html#sightseeing-home">Sightseeing tours</b-nav-item>
+                <b-nav-item href="#contact">Contact</b-nav-item>
+              </b-navbar-nav>
+              <b-navbar-nav class="ml-auto">
+                <b-nav-item-dropdown text="Tours" right>
+                  <b-dropdown-item href="sightseeing-1.html" class="text-center tours" id="tour-1">Crotone-Sibari-Adrano-Gela-Lipari</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-2.html" class="text-center tours" id="tour-2">Messina-Milazzo-Catania-Naples-Taranto</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-3.html" class="text-center tours" id="tour-3">Locri-Naples-Policastro-Tusa-Enna</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-4.html" class="text-center tours" id="tour-4">Camerina-Giardini Naxos-Syracuse-Ischia-V.Valentia</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-5.html" class="text-center tours" id="tour-5">Naples-Taranto-Agira-Lentini-Augusta</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-6.html" class="text-center tours" id="tour-6">Messina-Tindari-Naples-Taranto-Crotone</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-7.html" class="text-center tours" id="tour-7">Locri-Calabria-Agrigento-Gela-Catania</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-8.html" class="text-center tours" id="tour-8">Naples-Sibari-Tusa-Mendolito-Syracuse</b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item-dropdown right>
+                  <template #button-content>
+                    <em>User</em>
+                  </template>
+                  <b-dropdown-item href="#">
+                    <div class="text-center">
+                      <b-button variant="light" v-b-modal.my-modal>Sign in</b-button>
+                      <b-modal id="my-modal">
+                        <template>
+                          <div>
+                            <b-form-input v-model="text" placeholder="Username" class="text-center"></b-form-input><br>
+                            <b-form-input v-model="pasword" type="password" placeholder="Password" class="text-center"></b-form-input>
+                          </div>
+                        </template>
+                      </b-modal>
+                    </div>
+                  </b-dropdown-item>
+                    <div class="text-center">
+                      <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+                    </div>
+                </b-nav-item-dropdown>
+              </b-navbar-nav>
+            </b-collapse>
+          </b-navbar>
+        </div>
+    <!-- Stop <navbar> elements -->
+    <!-- Start <section> elements -->
+    <!-- Start Sightseeing-1 elements -->
+    <div id="sightseeing-1">
+      <div id="sightseeing-title">
+        <b-jumbotron bg-variant="light" class="text-center">
+          <template #header>Messina<b-icon-sun class="h1 mb-0" animation="spin" variant="warning"></b-icon-sun>Tindari<b-icon-sun class="h1 mb-0" animation="spin" variant="warning"></b-icon-sun>Naples<b-icon-sun class="h1 mb-0" animation="spin" variant="warning"></b-icon-sun>Taranto<b-icon-sun class="h1 mb-0" animation="spin" variant="warning"></b-icon-sun>Crotone</template>
+          <template #lead>a trip to the shores of southern Italy</template>
+        </b-jumbotron>
+      </div>
+      <div id="img-thumb">
+        <b-container fluid class="p-4 bg-dark">
+          <b-row>
+            <b-col>
+              <a href="images/sightseeing-6-1.jpg"><b-img thumbnail fluid src="images/sightseeing-6-1.jpg" alt="Crotone-Sibari-Adrano-Gela-Lipari"></b-img>
+            </b-col></a>
+            <b-col>
+              <a href="images/sightseeing-6-2.jpg"><b-img thumbnail fluid src="images/sightseeing-6-2.jpg" alt="Crotone-Sibari-Adrano-Gela-Lipari"></b-img>
+            </b-col></a>
+            <b-col>
+              <a href="images/sightseeing-6-3.jpg"><b-img thumbnail fluid src="images/sightseeing-6-3.jpg" alt="Crotone-Sibari-Adrano-Gela-Lipari"></b-img>
+            </b-col></a>
+          </b-row>
+        </b-container>
+      </div>
+      <div id="video" class="text-center">
+        <b-button v-b-modal.modal-2 variant="primary">Video</b-button>
+        <b-modal id="modal-2" title="Video of Messina-Tindari-Naples-Taranto-Crotone">
+          <iframe width="460" height="315" src="https://www.youtube.com/embed/6ZztzKb30rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </b-modal>
+      </div>
+      <div id="days">
+        <template>
+          <div class="accordion" role="tablist">
+            <b-card no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-1 variant="info" class="button">Day 1</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+            <b-card no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-2 variant="info" class="button">Day 2</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+            <b-card no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-3 variant="info" class="button">Day 3</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+            <b-card no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-4 variant="info" class="button">Day 4</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+            <b-card no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-5 variant="info" class="button">Day 5</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+            <b-card no-body class="mb-1">
+              <b-card-header header-tag="header" class="p-1" role="tab">
+                <b-button block v-b-toggle.accordion-6 variant="info" class="button">Day 6</b-button>
+              </b-card-header>
+              <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
+                <b-card-body>
+                  <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </b-card-text>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div id="booking" class="text-center">
+      <b-button v-b-toggle.collapse-1 variant="outline-primary">BOOK NOW</b-button>
+        <b-collapse id="collapse-1" class="mt-2">
+            <b-card>
+                <b-row align-h="around">
+                  <b-col md="auto">
+                    <p>Check in</p>
+                    <b-calendar v-model="value" @context="onContext" locale="en-US"></b-calendar>
+                  </b-col>
+                  <b-col md="auto">
+                    <p>Check out</p>
+                    <b-calendar v-model="value" @context="onContext" locale="en-US"></b-calendar>
+                  </b-col>
+                </b-row>
+              <b-button v-b-toggle.collapse-1 variant="primary">Thank you for your booking</b-button>
+            </b-card>
+        </b-collapse>
+    </div>
+    <!-- Stop Sightseeing-1 elements -->
+    <!-- Start <contact> elements -->
+        <div class="text-center" id="contact">
+          <b-container>
+            <b-row>
+              <b-col>
+                <div>
+                  <b-card bg-variant="light">
+                    <b-form-group label-cols-lg="3" label="Contact" label-size="lg" label-class="font-weight-bold pt-0"class="mb-0">
+                      <b-form-group label="Name:" label-for="nested-street" label-cols-sm="3" label-align-sm="right">
+                        <b-form-input id="nested-street"></b-form-input>
+                      </b-form-group>
+                      <b-form-group label="City:" label-for="nested-city" label-cols-sm="3" label-align-sm="right">
+                        <b-form-input id="nested-city"></b-form-input>
+                      </b-form-group>
+                      <b-form-group label="Country:" label-for="nested-country" label-cols-sm="3" label-align-sm="right">
+                        <b-form-input id="nested-country"></b-form-input><br>
+                        <template>
+                          <div>
+                            <b-form-textarea id="textarea" v-model="text" placeholder="Your message..." rows="3" max-rows="6"></b-form-textarea>
+                            <pre class="mt-3 mb-0">{{ text }}</pre>
+                          </div>
+                        </template>
+                      </b-form-group>
+                      <b-form-group label="Where did you hear about us?" label-cols-sm="3" label-align-sm="right" class="mb-0"v-slot="{ ariaDescribedby }">
+                        <b-form-radio-group class="pt-2" :options="['Friends', 'Social Media', 'Advertising']" :aria-describedby="ariaDescribedby"
+                        ></b-form-radio-group>
+                      </b-form-group><br>
+                      <div class="text-right">
+                      <div>
+                        <b-button v-b-modal.modal-1 variant="outline-primary">Send</b-button>
+                        <b-modal id="modal-1" title="Visit Magna Graecia">
+                          <p class="my-4 text-center">Thank you for your message!</p>
+                        </b-modal>
+                      </div>
+                      </div>
+                    </b-form-group>
+                  </b-card>
+                </div>
+              </b-col>
+            </b-row>
+          </b-container>
+        </div>
+    <!-- Stop <contact> elements -->
+    <!-- Start <questionnaire> elements -->
+      <div id="questionnaire" class="text-center">
+        <b-button block pill variant="success" href="questionnaire.html">Questionnaire</b-button>
+      </div>
+    <!-- Start <questionnaire> elements -->
+    <!-- Stop <section> elements -->
+    <!-- Start <footer> elements -->
+    <footer id="footer">
+        <b-container class="bv-example-row text-center">
+          <b-row>
+            <b-col>
+              <h4 class="footer-title">Menu</h4>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-house-fill animation="fade" font-scale="1" class="icon"></b-icon-house-fill><b-link class="icon-text" href="index.html#navbar">Home</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-binoculars-fill animation="fade" font-scale="1" class="icon"></b-icon-binoculars-fill><b-link class="icon-text" href="index.html#sightseeing-home">Sightseeing tours</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-telephone-fill animation="fade" font-scale="1" class="icon"></b-icon-telephone-fill><b-link class="icon-text" href="#contact">Contact</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-person-circle animation="fade" font-scale="1" class="icon"></b-icon-person-circle><b-link class="icon-text" href="../index.html" target="_blank">Portfolio</b-link>
+                </div>
+              </template>
+            </b-col>
+            <b-col>
+              <h4 class="footer-title">Information</h4>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-question-square-fill animation="throb" font-scale="1" class="icon"></b-icon-question-square-fill><b-link class="icon-text" href="#">FAQ's</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-shuffle animation="throb" font-scale="1" class="icon"></b-icon-shuffle><b-link class="icon-text" href="#">How to use this site</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-book-fill animation="throb" font-scale="1" class="icon"></b-icon-book-fill><b-link class="icon-text" href="#">Free advice</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-lock-fill animation="throb" font-scale="1" class="icon"></b-icon-lock-fill><b-link class="icon-text" href="#">Privacy policy</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-patch-exclamation-fill animation="throb" font-scale="1" class="icon"></b-icon-patch-exclamation-fill><b-link class="icon-text" href="#">Terms & Conditions</b-link>
+                </div>
+              </template>
+            </b-col>
+            <b-col>
+              <h4 class="footer-title">Resources</h4>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-pentagon-fill animation="cylon" font-scale="1" class="icon"></b-icon-pentagon-fill><b-link class="icon-text" href="#">Allet</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-shield-fill animation="cylon" font-scale="1" class="icon"></b-icon-shield-fill><b-link class="icon-text" href="#">Bertolini</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-slack animation="cylon" font-scale="1" class="icon"></b-icon-slack><b-link class="icon-text" href="#">Cooper Pegler</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-sun animation="cylon" font-scale="1" class="icon"></b-icon-sun><b-link class="icon-text" href="#">Efco</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-signpost-fill animation="cylon" font-scale="1" class="icon"></b-icon-signpost-fill><b-link class="icon-text" href="#">Flymo</b-link>
+                </div>
+              </template>
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-container class="bv-example-row text-center">
+          <b-row>
+            <b-col>
+              <p class="dragos text-center">Created by <a href="../index.html" target="_blank">Dragoş Vatră</a> &#169; 2021-2022 All rights reserved</p>
+            </b-col>
+          </b-row>
+        </b-container>
+    </footer>
+    <!-- Stop <footer> elements -->
+    <!-- Start <script> elements -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <!-- Stop <script> elements -->
+    </div>
+</body>
+<!-- Stop <body> elements -->
+</html>
+<!-- Stop web page -->

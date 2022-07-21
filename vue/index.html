@@ -1,0 +1,365 @@
+<!-- Created by Dragoş Vatră  0743503240  vatradragos@yaoo.com -->
+<!-- Start web page -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start <head> elements -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Magna Graecia - Index - Created and built by Dragoș Vatră</title>
+    <link rel="shortcut icon" type="image/png" href="favicon/favicon.png"/>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@2.6.9/dist/vue.js"></script>
+	  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>	
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Stop <head> elements -->
+<!-- Start <body> elements -->
+<body>
+    <div id="app">
+    <!-- Start <navbar> elements -->
+        <div id="navbar">
+          <b-navbar toggleable="lg" type="dark" variant="dark">
+            <b-navbar-brand href="index.html">
+              <img src="images/logo-mg.jpg" class="d-inline-block align-top logo" alt="Logo">
+            Visit Magna Graecia</b-navbar-brand>
+            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-collapse id="nav-collapse" is-nav>
+              <b-navbar-nav>
+                <b-nav-item href="../index.html" target="_blank">Portfolio</b-nav-item>
+                <b-nav-item href="#about">Home</b-nav-item>
+                <b-nav-item href="#sightseeing-home">Sightseeing tours</b-nav-item>
+                <b-nav-item href="#contact">Contact</b-nav-item>
+              </b-navbar-nav>
+              <b-navbar-nav class="ml-auto">
+                <b-nav-item-dropdown text="Tours" right>
+                  <b-dropdown-item href="sightseeing-1.html" class="text-center tours" id="tour-1">Crotone-Sibari-Adrano-Gela-Lipari</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-2.html" class="text-center tours" id="tour-2">Messina-Milazzo-Catania-Naples-Taranto</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-3.html" class="text-center tours" id="tour-3">Locri-Naples-Policastro-Tusa-Enna</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-4.html" class="text-center tours" id="tour-4">Camerina-Giardini Naxos-Syracuse-Ischia-V.Valentia</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-5.html" class="text-center tours" id="tour-5">Naples-Taranto-Agira-Lentini-Augusta</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-6.html" class="text-center tours" id="tour-6">Messina-Tindari-Naples-Taranto-Crotone</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-7.html" class="text-center tours" id="tour-7">Locri-Calabria-Agrigento-Gela-Catania</b-dropdown-item>
+                  <b-dropdown-item href="sightseeing-8.html" class="text-center tours" id="tour-8">Naples-Sibari-Tusa-Mendolito-Syracuse</b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item-dropdown right>
+                  <template #button-content>
+                    <em>User</em>
+                  </template>
+                  <b-dropdown-item href="#">
+                    <div class="text-center">
+                      <b-button variant="light" v-b-modal.my-modal>Sign in</b-button>
+                      <b-modal id="my-modal">
+                        <template>
+                          <div>
+                            <b-form-input v-model="text" placeholder="Username" class="text-center"></b-form-input><br>
+                            <b-form-input v-model="pasword" type="password" placeholder="Password" class="text-center"></b-form-input>
+                          </div>
+                        </template>
+                      </b-modal>
+                    </div>
+                  </b-dropdown-item>
+                    <div class="text-center">
+                      <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+                    </div>
+                </b-nav-item-dropdown>
+              </b-navbar-nav>
+            </b-collapse>
+          </b-navbar>
+        </div>
+    <!-- Stop <navbar> elements -->
+    <!-- Start <section> elements -->
+    <!-- Start <header> elements -->
+        <template>
+          <div>
+            <b-carousel id="carousel-fade" style="text-shadow: 0px 0px 2px #000" fade indicators img-width="1024" img-height="480">
+              <b-carousel-slide img-src="images/carousel-1.jpg">
+                <h1>Visit Magna Graecia</h1>
+                <p class="carousel-p">Metaponto - South Italy</p>
+              </b-carousel-slide>
+              <b-carousel-slide img-src="images/carousel-2.jpg">
+                <h1>Visit Magna Graecia</h1>
+                <p>Gela - Sicily</p>
+              </b-carousel-slide>
+              <b-carousel-slide img-src="images/carousel-3.jpg">
+                <h1>Visit Magna Graecia</h1>
+                <p>Augusta - Sicily</p>
+              </b-carousel-slide>
+              <b-carousel-slide img-src="images/carousel-4.jpg">
+                <h1>Visit Magna Graecia</h1>
+                <p class="carousel-p">Calabria - South Italy</p>
+              </b-carousel-slide>
+              <b-carousel-slide img-src="images/carousel-5.jpg">
+                <h1>Visit Magna Graecia</h1>
+                <p>Syracuse - Sicily</p>
+              </b-carousel-slide>
+            </b-carousel>
+          </div>
+        </template>
+    <!-- Stop <header> elements -->
+    <!-- Start <about> elements -->
+        <div id="about">
+          <b-jumbotron bg-variant="light" header="" lead="">
+            <h1 class="text-center">Magna Graecia</h1>
+            <p class="text-center">a journey you will not forget too soon</p>
+            <p class="text-center">Magna Graecia was the name given by the Romans to the coastal areas of Southern Italy in the present-day regions of Campania, Apulia, Basilicata, Calabria and Sicily; these regions were extensively populated by Greek settlers. The settlers who began arriving in the 8th century BC brought with them their Hellenic civilization which left a lasting imprint on Italy such as in the culture of ancient Rome. They also influenced the native peoples, especially the Sicilian Sicels, who became hellenised after they adopted the Greek culture as their own. The term Magna Graecia first appears in Polybius' Histories. The Roman poet Ovid notably referred to the south of Italy as such in his poem Fasti.</p>
+          <div class="text-center">
+            <b-button v-b-toggle.collapse-1 variant="primary" id="source">Source</b-button>
+            <b-collapse id="collapse-1" class="mt-2">
+              <b-card>
+                <p class="card-text">https://en.wikipedia.org/wiki/Magna_Graecia</p>
+                <b-button v-b-toggle.collapse-1-inner size="sm" id="details">More details of Magna Graecia</b-button>
+                <b-collapse id="collapse-1-inner" class="mt-2">
+              <b-card>According to Strabo's Geographica, the colonization of Magna Graecia had already begun by the time of the Trojan War and lasted for several centuries. In the 8th and 7th century BC, due to demographic crises (famine, overcrowding, etc.), stasis, a developing need for new commercial outlets and ports, and expulsion from their homeland after wars, Greeks began to settle in southern Italy. Colonies began to be established all over the Mediterranean and Black Seas (with the exception of Northwestern Africa, in the sphere of influence of Carthage), including in Sicily and the southern part of the Italian Peninsula. The Romans called this area Magna Graecia (Latin for "Greater Greece") since it was so densely inhabited by the Greeks. Ancient geographers differed on whether the term included Sicily or merely Apulia, Campania and Calabria, Strabo being the most prominent advocate of the wider definitions. With colonization, Greek culture was exported to Italy in its dialects of the Ancient Greek language, its religious rites and its traditions of the independent polis. An original Hellenic civilization soon developed and later interacted with the native Italic civilisations. The most important cultural transplant was the Chalcidean/Cumaean variety of the Greek alphabet, which was adopted by the Etruscans; the Old Italic alphabet subsequently evolved into the Latin alphabet, which became the most widely used alphabet in the world.
+              These Hellenic colonies became very rich and powerful, and some still stand today such as Neapolis ("New City", now Naples), Syracuse, Akragas (Agrigento), Taras (Taranto), Rhegion (Reggio Calabria), or Kroton (Crotone).
+              The first Greek city to be absorbed into the Roman Republic was Neapolis in 327 BC. The other Greek cities in Italy followed during the Samnite Wars and the Pyrrhic War; Taras was the last to fall in 272. Sicily was conquered by Rome during the First Punic War. Only Syracuse remained independent until 212, because its king Hiero II was a devoted ally of the Romans. His grandson Hieronymus however made an alliance with Hannibal, which prompted the Romans to besiege the city, which fell in 212, despite the machines of Archimedes as Proclus writes in his commentary on Euclid's Elements Archimedes constructed weapons functioning with compressed air, with weights and counterweights as Ctesibius and Hero explain.</b-card>
+              <div class="text-center my-3">
+                <b-button v-b-tooltip.hover title="https://en.wikipedia.org/wiki/Ancient_Greek_dialects" href="https://en.wikipedia.org/wiki/Ancient_Greek_dialects" target="_blank">
+                  Link info
+                </b-button>
+                <b-button v-b-tooltip.hover title="https://en.wikipedia.org/wiki/Greek_coinage_of_Italy_and_Sicily" href="https://en.wikipedia.org/wiki/Greek_coinage_of_Italy_and_Sicily" target="_blank">
+                  Link info
+                </b-button>
+                <b-button v-b-tooltip.hover title="https://en.wikipedia.org/wiki/Italiotes" href="https://en.wikipedia.org/wiki/Italiotes" target="_blank">
+                  Link info
+                </b-button>
+              </div>
+              </b-collapse>
+              </b-card>
+              </b-collapse>
+            </div>
+          </b-jumbotron>
+        </div>
+    <!-- Stop <about> elements -->
+    <!-- Start <sightseeing> elements -->
+        <div class="text-center" id="sightseeing-home">
+          <b-container class="text-center">
+            <b-row class="card-row">
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-1.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2" class="card">
+                  <b-card-text>
+                    Crotone - Sibari - Adrano - Gela - Lipari
+                  </b-card-text>
+                      <b-button href="sightseeing-1.html" variant="primary">Book now</b-button>
+                </b-card>
+              </b-col>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-2.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Messina - Milazzo - Catania - Naples - Taranto
+                  </b-card-text>
+                  <b-button href="sightseeing-2.html" variant="warning">Special Offer</b-button>
+                </b-card>
+              </b-col>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-3.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Locri - Naples - Policastro - Tusa - Enna
+                  </b-card-text>
+                  <b-button href="sightseeing-3.html" variant="primary">Book now</b-button>
+                </b-card>
+              </b-col>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-4.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Camerina - Giardini Naxos - Syracuse - Ischia - V. Valentia
+                  </b-card-text>
+                  <b-button href="sightseeing-4.html" variant="primary">Book now</b-button>
+                </b-card>
+              </b-col>
+            </b-row class="card-row">
+          </b-container>
+          <b-container class="text-center">
+            <b-row>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-5.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Naples - Taranto - Agira - Lentini - Augusta
+                  </b-card-text>
+                  <b-button href="sightseeing-5.html" variant="warning">Special Offer</b-button>
+                </b-card>
+              </b-col>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-6.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Messina - Tindari - Naples - Taranto - Crotone
+                  </b-card-text>
+                  <b-button href="sightseeing-6.html" variant="primary">Book now</b-button>
+                </b-card>
+              </b-col>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-7.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Locri - Calabria - Agrigento - Gela - Catania
+                  </b-card-text>
+                  <b-button href="sightseeing-7.html" variant="warning">Special Offer</b-button>
+                </b-card>
+              </b-col>
+              <b-col xs="6" sm="6" md="6" lg="3">
+                <b-card title="Sightseeing tour" img-src="images/card-8.jpg" fluid alt="Responsive image" img-alt="Image" img-top tag="article"style="max-width: 20rem;" class="mb-2">
+                  <b-card-text>
+                    Naples - Sibari - Tusa - Mendolito - Syracuse
+                  </b-card-text>
+                  <b-button href="sightseeing-8.html" variant="primary">Book now</b-button>
+                </b-card>
+              </b-col>
+            </b-row>
+          </b-container>
+        </div>
+    <!-- Stop <sightseeing> elements -->
+    <!-- Start <contact> elements -->
+        <div class="text-center" id="contact">
+          <b-container>
+            <b-row>
+              <b-col>
+                <div>
+                  <b-card bg-variant="light">
+                    <b-form-group label-cols-lg="3" label="Contact" label-size="lg" label-class="font-weight-bold pt-0"class="mb-0">
+                      <b-form-group label="Name:" label-for="nested-street" label-cols-sm="3" label-align-sm="right">
+                        <b-form-input id="nested-street" class="input"></b-form-input>
+                      </b-form-group>
+                      <b-form-group label="City:" label-for="nested-city" label-cols-sm="3" label-align-sm="right">
+                        <b-form-input id="nested-city" class="input"></b-form-input>
+                      </b-form-group>
+                      <b-form-group label="Country:" label-for="nested-country" label-cols-sm="3" label-align-sm="right">
+                        <b-form-input id="nested-country" class="input"></b-form-input><br>
+                        <template>
+                          <div>
+                            <b-form-textarea id="textarea" v-model="text" placeholder="Your message..." rows="3" max-rows="6"></b-form-textarea>
+                            <pre class="mt-3 mb-0">{{ text }}</pre>
+                          </div>
+                        </template>
+                      </b-form-group>
+                      <b-form-group label="Where did you hear about us?" label-cols-sm="3" label-align-sm="right" class="mb-0"v-slot="{ ariaDescribedby }">
+                        <b-form-radio-group class="pt-2" :options="['Friends', 'Social Media', 'Advertising']" :aria-describedby="ariaDescribedby"></b-form-radio-group>
+                      </b-form-group><br>
+                      <div class="text-right">
+                      <div>
+                        <b-button v-b-modal.modal-1 variant="outline-primary">Send</b-button>
+                        <b-modal id="modal-1" title="Visit Magna Graecia">
+                          <p class="my-4 text-center">Thank you for your message!</p>
+                        </b-modal>
+                      </div>
+                      </div>
+                    </b-form-group>
+                  </b-card>
+                </div>
+              </b-col>
+            </b-row>
+          </b-container>
+        </div>
+    <!-- Stop <contact> elements -->
+    <!-- Start <questionnaire> elements -->
+      <div id="questionnaire" class="text-center">
+        <b-button block pill variant="success" href="questionnaire.html">Questionnaire</b-button>
+      </div>
+    <!-- Start <questionnaire> elements -->
+    <!-- Stop <section> elements -->
+    <!-- Start <footer> elements -->
+    <footer id="footer">
+        <b-container class="bv-example-row text-center">
+          <b-row>
+            <b-col>
+              <h4 class="footer-title">Menu</h4>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-house-fill animation="fade" font-scale="1" class="icon"></b-icon-house-fill><b-link class="icon-text" href="#navbar">Home</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-binoculars-fill animation="fade" font-scale="1" class="icon"></b-icon-binoculars-fill><b-link class="icon-text" href="index.html#sightseeing-home">Sightseeing tours</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-telephone-fill animation="fade" font-scale="1" class="icon"></b-icon-telephone-fill><b-link class="icon-text" href="index.html#contact">Contact</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-person-circle animation="fade" font-scale="1" class="icon"></b-icon-person-circle><b-link class="icon-text" href="../index.html" target="_blank">Portfolio</b-link>
+                </div>
+              </template>
+            </b-col>
+            <b-col>
+              <h4 class="footer-title">Information</h4>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-question-square-fill animation="throb" font-scale="1" class="icon"></b-icon-question-square-fill><b-link class="icon-text" href="#">FAQ's</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-shuffle animation="throb" font-scale="1" class="icon"></b-icon-shuffle><b-link class="icon-text" href="#">How to use this site</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-book-fill animation="throb" font-scale="1" class="icon"></b-icon-book-fill><b-link class="icon-text" href="#">Free advice</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-lock-fill animation="throb" font-scale="1" class="icon"></b-icon-lock-fill><b-link class="icon-text" href="#">Privacy policy</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-patch-exclamation-fill animation="throb" font-scale="1" class="icon"></b-icon-patch-exclamation-fill><b-link class="icon-text" href="#">Terms & Conditions</b-link>
+                </div>
+              </template>
+            </b-col>
+            <b-col>
+              <h4 class="footer-title">Resources</h4>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-pentagon-fill animation="cylon" font-scale="1" class="icon"></b-icon-pentagon-fill><b-link class="icon-text" href="#">Allet</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-shield-fill animation="cylon" font-scale="1" class="icon"></b-icon-shield-fill><b-link class="icon-text" href="#">Bertolini</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-slack animation="cylon" font-scale="1" class="icon"></b-icon-slack><b-link class="icon-text" href="#">Cooper Pegler</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-sun animation="cylon" font-scale="1" class="icon"></b-icon-sun><b-link class="icon-text" href="#">Efco</b-link>
+                </div>
+              </template>
+              <template>
+                <div class="h6 mb-0">
+                  <b-icon-signpost-fill animation="cylon" font-scale="1" class="icon"></b-icon-signpost-fill><b-link class="icon-text" href="#">Flymo</b-link>
+                </div>
+              </template>
+            </b-col>
+          </b-row>
+        </b-container>
+        <b-container class="bv-example-row text-center">
+          <b-row>
+            <b-col>
+              <p class="dragos text-center">Created by <a href="../index.html" target="_blank">Dragoş Vatră</a> &#169; 2021-2022 All rights reserved</p>
+            </b-col>
+          </b-row>
+        </b-container> 
+    </footer>
+    <!-- Stop <footer> elements -->
+    <!-- Start <script> elements -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <!-- Stop <script> elements -->
+    </div>
+</body>
+<!-- Stop <body> elements -->
+</html>
+<!-- Stop web page -->

@@ -1,0 +1,238 @@
+$margin-mx: 0 auto;
+$margin: 20px;
+$marginx: 6%;
+$margin-10: 10px 10px 10px 10px;
+$padd: 5%;
+$padd-10: 10px 10px 10px 10px;
+$color-a: #111;
+$color-b: #fff;
+$color-c: #0f1e40;
+$color-d: #343a40;
+$rad: 6px;
+
+html {
+  scroll-behavior: smooth;
+  body {
+	  #navbar {
+	  box-shadow: 5px 10px #888888;
+	  }
+	  .logo {
+		border-radius: 50%;
+	  	margin-left: $margin;
+	  }
+	  #nav-collapse {
+  	  margin-left: $margin;
+	  }
+	  b-carousel-slide {
+	  color: $color-a;
+      }
+      .carousel-p {
+	  color: $color-c;
+      }
+      #carousel-fade {
+      margin-bottom: $margin;
+      }
+      #about {
+      padding-left: $padd;
+      padding-right: $padd;
+	  }
+	  #source {
+      margin-bottom: $margin;
+      }
+      #details {
+  	  margin-bottom: $margin;
+      }
+      #collapse-1 {
+  	  margin-bottom: $margin;
+      }
+      #collapse-1-inner {
+  	  margin-bottom: $margin;
+      }
+      #sightseeing-home {
+      margin-bottom: $margin;
+      }
+      .card-row {
+      margin-bottom: $margin;
+      }
+      .card {
+      box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .contact {
+	  margin: $margin-mx;
+      }
+      .input {
+      text-align: center;
+      }
+      #footer {
+	  margin-top: $margin;
+	  background-color: $color-d;
+	  color: $color-b;
+	  }
+	  .footer-title {
+	  margin-top: $margin;
+      }
+      .mb-0 {
+	  padding: $padd-10;
+	  }
+	  .icon {
+	  margin-right: 10px;
+	  }
+	  .icon-text {
+	  color: $color-b;
+      }
+      .icon-text:hover {
+	  color: $color-b;
+      }
+      .dragos {
+	  margin: $margin-10;
+      }
+      .dragos a {
+	  color: $color-b;
+	  text-decoration: none;
+	  }
+    	#img-thumb {
+      margin-left: $marginx;
+      margin-right: $marginx;
+      }
+      .image {
+      cursor: pointer;
+      }
+      .p-4 {
+  	  border-radius: $rad;
+      }
+      .p-4 img:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+      }
+      #video {
+      margin-top: $margin;
+      margin-bottom: $margin;
+      }
+      #days {
+      margin-left: $marginx;
+      margin-right: $marginx;
+      }
+      .button {
+      width: 100%;
+      }
+      #booking {
+      margin-left: $marginx;
+      margin-right: $marginx;
+      margin-top: $margin;
+      margin-bottom: $margin;
+      }
+      #questionnaire {
+      margin-left: $marginx;
+      margin-right: $marginx;
+      margin-top: $margin;
+      margin-bottom: $margin;
+	  }
+	  .question {
+  	  font-weight: bolder;
+      }
+      #age {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      }
+      .ages {
+      margin-left: $margin;
+      margin-right: $margin;
+      }
+      #tag-places {
+      margin-top: $margin;
+      margin-bottom: $margin;
+      }
+      #add-tags {
+  	  width: 90%;
+      margin: $margin-mx;
+      color: $color-a;
+      background-color: transparent;
+      }
+      #stars {
+      width: 90%;
+      margin: $margin-mx;
+      }
+      #thanks {
+      margin-top: $margin;
+      margin-bottom: $margin;
+      }
+      @media only screen and (max-width: 600px) {
+  	  #questionnaire-text {
+      font-size: 1em;
+       }
+      }
+	  @media only screen and (max-width: 575px) {
+	  #sightseeing-home {
+	    padding-left: 100px;
+	   }
+	  #sightseeing {
+	    margin: $margin-mx;
+	   }
+	  #questionnaire-text {
+	    font-size: 0.9em;
+	   }
+	  }
+	  @media only screen and (max-width: 550px) {
+	  #sightseeing-home {
+	    padding-left: 80px;
+	   }
+	  #sightseeing {
+	    margin: $margin-mx;
+	   }
+	  #questionnaire-text {
+	    font-size: 0.8em;
+	   }
+	  }
+	  @media only screen and (max-width: 500px) {
+	  #sightseeing-home {
+	    padding-left: 60px;
+	   }
+	  #sightseeing {
+	    margin: $margin-mx;
+	   }
+	  iframe {
+	    width: 430px;
+	   }
+	  #questionnaire-text {
+	    font-size: 0.7em;
+	   }
+	  }
+	  @media only screen and (max-width: 475px) {
+	  #sightseeing-home {
+	    padding-left: 40px;
+	   }
+	  #sightseeing {
+	    margin: $margin-mx;
+	   }
+	  iframe {
+	    width: 415px;
+	   }
+	  #questionnaire-text {
+	    font-size: 0.6em;
+	   }
+	  }
+	  @media only screen and (max-width: 450px) {
+	  #sightseeing-home {
+	    padding-left: 20px;
+	   }
+	  #sightseeing {
+	    margin: $margin-mx;
+	   }
+	  iframe {
+	    width: 400px;
+	   }
+	  #questionnaire-text {
+	    font-size: 0.5em;
+	   }
+	  }
+	@media only screen and (max-width: 400px) {
+	  iframe {
+	    width: 340px;
+	   }
+	  #questionnaire-text {
+	    font-size: 0.4em;
+	   }
+	 }
+  }
+}

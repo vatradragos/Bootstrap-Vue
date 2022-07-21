@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth; }
+  html body #navbar {
+    box-shadow: 5px 10px #888888; }
+  html body .logo {
+    border-radius: 50%;
+    margin-left: 20px; }
+  html body #nav-collapse {
+    margin-left: 20px; }
+  html body b-carousel-slide {
+    color: #111; }
+  html body .carousel-p {
+    color: #0f1e40; }
+  html body #carousel-fade {
+    margin-bottom: 20px; }
+  html body #about {
+    padding-left: 5%;
+    padding-right: 5%; }
+  html body #source {
+    margin-bottom: 20px; }
+  html body #details {
+    margin-bottom: 20px; }
+  html body #collapse-1 {
+    margin-bottom: 20px; }
+  html body #collapse-1-inner {
+    margin-bottom: 20px; }
+  html body #sightseeing-home {
+    margin-bottom: 20px; }
+  html body .card-row {
+    margin-bottom: 20px; }
+  html body .card {
+    box-shadow: 3px 3px 5px 6px #ccc; }
+  html body .contact {
+    margin: 0 auto; }
+  html body .input {
+    text-align: center; }
+  html body #footer {
+    margin-top: 20px;
+    background-color: #343a40;
+    color: #fff; }
+  html body .footer-title {
+    margin-top: 20px; }
+  html body .mb-0 {
+    padding: 10px 10px 10px 10px; }
+  html body .icon {
+    margin-right: 10px; }
+  html body .icon-text {
+    color: #fff; }
+  html body .icon-text:hover {
+    color: #fff; }
+  html body .dragos {
+    margin: 10px 10px 10px 10px; }
+  html body .dragos a {
+    color: #fff;
+    text-decoration: none; }
+  html body #img-thumb {
+    margin-left: 6%;
+    margin-right: 6%; }
+  html body .image {
+    cursor: pointer; }
+  html body .p-4 {
+    border-radius: 6px; }
+  html body .p-4 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease; }
+  html body #video {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  html body #days {
+    margin-left: 6%;
+    margin-right: 6%; }
+  html body .button {
+    width: 100%; }
+  html body #booking {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  html body #questionnaire {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  html body .question {
+    font-weight: bolder; }
+  html body #age {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  html body .ages {
+    margin-left: 20px;
+    margin-right: 20px; }
+  html body #tag-places {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  html body #add-tags {
+    width: 90%;
+    margin: 0 auto;
+    color: #111;
+    background-color: transparent; }
+  html body #stars {
+    width: 90%;
+    margin: 0 auto; }
+  html body #thanks {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  @media only screen and (max-width: 600px) {
+    html body #questionnaire-text {
+      font-size: 1em; } }
+  @media only screen and (max-width: 575px) {
+    html body #sightseeing-home {
+      padding-left: 100px; }
+    html body #sightseeing {
+      margin: 0 auto; }
+    html body #questionnaire-text {
+      font-size: 0.9em; } }
+  @media only screen and (max-width: 550px) {
+    html body #sightseeing-home {
+      padding-left: 80px; }
+    html body #sightseeing {
+      margin: 0 auto; }
+    html body #questionnaire-text {
+      font-size: 0.8em; } }
+  @media only screen and (max-width: 500px) {
+    html body #sightseeing-home {
+      padding-left: 60px; }
+    html body #sightseeing {
+      margin: 0 auto; }
+    html body iframe {
+      width: 430px; }
+    html body #questionnaire-text {
+      font-size: 0.7em; } }
+  @media only screen and (max-width: 475px) {
+    html body #sightseeing-home {
+      padding-left: 40px; }
+    html body #sightseeing {
+      margin: 0 auto; }
+    html body iframe {
+      width: 415px; }
+    html body #questionnaire-text {
+      font-size: 0.6em; } }
+  @media only screen and (max-width: 450px) {
+    html body #sightseeing-home {
+      padding-left: 20px; }
+    html body #sightseeing {
+      margin: 0 auto; }
+    html body iframe {
+      width: 400px; }
+    html body #questionnaire-text {
+      font-size: 0.5em; } }
+  @media only screen and (max-width: 400px) {
+    html body iframe {
+      width: 340px; }
+    html body #questionnaire-text {
+      font-size: 0.4em; } }
+
+/*# sourceMappingURL=style.css.map */
